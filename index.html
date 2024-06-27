@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 id="title">
+                freeCodeCamp Survey Form
+            </h1>
+            <p> Thank you for taking the time to help us improve the platform </p>
+        </header>
+        <form action="/" method="post">
+            <label for="name">Name <input type="text" name="name" id="name" placeholder="Enter your name"></label>
+            <label for="email">Email <input type="email" name="email" id="email" placeholder="Enter your Email"></label>
+            <label for="age">Age<span>(optional)</span> <input type="number" name="age" id="age"
+                    placeholder="Enter your age"></label>
+            <label for="roles">Which option best describes your current role? <select name="roles" id="roles">
+                    <option value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="fulltimejob">Full time job</option>
+                    <option value="fulltimelearner">Full time learner</option>
+                    <option value="prefernottosay">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="recomment">Would you recommend freeCodeCamp to a friend?</label>
+            <input type="radio" name="definitely" id="definitely">
+            <label for="definitely">Definitely</label>
+            <input type="radio" name="maybe" id="maybe">
+            <label for="maybe">Maybe</label>
+            <input type="radio" name="notsure" id="notsure">
+            <label for="notsure">Not sure</label>
+            <label for="feature">What is your favorite feature of freeCodeCamp?<select name="feature" id="feature">
+                    <option value="">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+
+                    <option value="community">Community</option>
+                    <option value="opensource">Open Source</option>
+                </select>
+            </label>
+
+            <label for="feedback">
+                <label for="front"><input type="radio" name="" id="front">Front-end Projects</label>
+                <label for="back"><input type="radio" name="" id="back">Back-end Projects</label>
+                <label for="data"><input type="radio" name="" id="data">Data Visualization</label>
+                <label for="challenge"><input type="radio" name="" id="challenge">Challenges</label>
+                <label for="open"><input type="radio" name="" id="open">Open Source Community</label>
+                <label for="git"><input type="radio" name="" id="git">Gitter help rooms</label>
+                <label for="video"><input type="radio" name="" id="video">Videos</label>
+                <label for="city"><input type="radio" name="" id="city">City Meetups</label>
+                <label for="wiki"><input type="radio" name="" id="wiki">Wiki</label>
+                <label for="forum"><input type="radio" name="" id="forum">Forum</label>
+                <label for="additional"><input type="radio" name="" id="additional">Additional Courses</label>
+
+            </label>
+
+            <label for="suggestions">Any comments or suggestions?
+
+                <textarea name="suggestions" id="suggestions" placeholder="Enter your comments here"></textarea>
+            </label>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
